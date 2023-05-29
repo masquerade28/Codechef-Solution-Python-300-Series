@@ -4,10 +4,14 @@
   Determine whether Chef needs to take a subscription or not for setting up the meet.
 '''
 
+# Running Loop For Test Cases
 for t in range(int(input())):
   
+  # Taking Input For X = Duration Of Meeting (In Minutes)
   X = int(input())
   
+  # If Meeting's Duration Exceeds 30 Minutes Chef Needs To Buy Subscription
   GetSubscription = "YES" if X > 30 else "NO"
   
+  # Displaying Result
   print(GetSubscription)
